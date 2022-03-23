@@ -4,13 +4,22 @@ class Rectangle
 private:
     float len,
         breadth, otherData;
-    char Family;
+    const char *Family=nullptr;
 
 public:
+    // constructor overloading
     Rectangle(float len, float breadth)
     {
         this->len = len;
         this->breadth = breadth;
+    };
+    // copy constructor AKA shallow copy constructor
+    Rectangle(const Rectangle &param)
+    {
+    // deep copy constructor
+        this->len = param.len;
+        this->breadth = param.breadth;
+        this->Family = (char *)malloc(sizeof(char) * param.len);
     };
 
     int Area();
