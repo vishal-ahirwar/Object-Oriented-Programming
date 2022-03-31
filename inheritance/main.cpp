@@ -3,7 +3,7 @@
 
 int main(void)
 {
-    Derived obj_1;
-    Base obj_1_BASE;
+    Derived obj_1(45,"Hello, World");
+
     return 0;
 }
