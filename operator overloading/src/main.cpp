@@ -89,5 +89,8 @@ int main(void)
     std::cout << c3;
 
     Complex c4 = c3 % c2;
+    c4.Display();
+    Complex c5=c4.operator+(c3);
+    
     return 0;
 }
