@@ -1,6 +1,7 @@
 
 // Copyright© 2022 Vishal Ahirwar.
-#include "derived.hpp"
+// #include "derived.hpp"
+#include "emloyee.hpp"
 class Parent
 {
 public:
@@ -40,7 +41,19 @@ void GrandChild::PrintMembers() const
 
 int main()
 {
-    GrandChild Shyam;
-    Shyam.PrintMembers();
+    // GrandChild Shyam;
+    // Shyam.PrintMembers();
+    FullTimeEmployee Rohan("Rohan Ahirwar", 12, 45000.0);
+    PartTimeEmployee Vishal("Vishal Ahirwar", 5, 12000.0);
+    PartTimeEmployee Piyush("Piyush Shrivas", 3, 9878112.45);
+    FullTimeEmployee Dinesh("Dinesh Anuragi", 10, 45000.0);
+
+
+    printf("\n-----------\nShowing Employee Data\n-------------\n\n");
+    Rohan.PrintInfo();
+    Dinesh.PrintInfo();
+    Vishal.PrintInfo();
+    Piyush.PrintInfo();
+
     return 0;
 };
