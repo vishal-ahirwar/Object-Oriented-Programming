@@ -77,7 +77,7 @@ void ADT<T>::display() const
 int main()
 {
     srand(time(0));
-    const char *StudentsName[] = {"Vishal", "Rohan", "Rakesh", "Rishi", "Vivan", "Siv", "Sam", "kanny", "shyam", "Hari", "love", "Dinesh", "piyush"};
+    constexpr char *StudentsName[] = {"Vishal", "Rohan", "Rakesh", "Rishi", "Vivan", "Siv", "Sam", "kanny", "shyam", "Hari", "love", "Dinesh", "piyush"};
 
     ADT<std::string> Students(100);
     for (int i = 0; i < 100; ++i)
