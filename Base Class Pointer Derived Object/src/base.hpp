@@ -9,7 +9,7 @@ class Base
     int GetValue()const;
     Base(){};
     Base(int);
-    ~Base();
+   virtual ~Base();
     void say()const;
 };
 

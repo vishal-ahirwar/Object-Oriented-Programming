@@ -2,6 +2,7 @@
 Base::Base(int ID)
 {
     this->x=ID;
+      std::cerr<<"[Base][Constructor Called]!\n";
 };
 void Base::say()const
 {
@@ -11,4 +12,4 @@ void Base::say()const
 
 int Base::GetValue()const{return this->x;};
 
-Base::~Base(){std::cerr<<"[Destructor Called]";};
+Base::~Base(){  std::cerr<<"[Base][Destructor Called]!\n";};
