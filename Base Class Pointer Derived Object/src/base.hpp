@@ -1,7 +1,7 @@
 #ifndef _BASE_
 #define _BASE_
 #include<iostream>
-class Base
+class Base 
 {
     private:
     int x;
@@ -10,7 +10,7 @@ class Base
     Base(){};
     Base(int);
     virtual ~Base();
-    void say()const;
+    virtual void say()const ;
 };
 
 #endif
